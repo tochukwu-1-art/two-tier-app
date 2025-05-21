@@ -4,7 +4,7 @@ function Data() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("http://tesa-alb-343047390.eu-west-1.elb.amazonaws.com/data")
+    fetch("http://3.252.69.33:5000/data")
       .then((res) => res.json())
       .then((json) => {
         console.log(json);
