@@ -4,7 +4,7 @@ function Data() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/data")
+    fetch("http://10.10.1.244:5000/data")
       .then((res) => res.json())
       .then((json) => {
         console.log(json);
